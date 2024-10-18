@@ -1,0 +1,19 @@
+name: gcp-foundations-benchmark
+title: GCP Foundations InSpec Profile
+maintainer: Anupam Yadav
+license: Apache-2.0
+summary: An InSpec profile (Compliance as a Code) for GCP Resources Audit
+version: 1.0.0
+inspec_version: ">= 4.3.2"
+attributes:
+  - name: project_id
+    required: true
+    type: string
+  - name: vpc_name
+    required: true
+    type: string
+depends:
+  - name: inspec-gcp
+    url: https://github.com/inspec/inspec-gcp/archive/refs/tags/v1.11.135.tar.gz
+supports:
+  - platform: gcp
