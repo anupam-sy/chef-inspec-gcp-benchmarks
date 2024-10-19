@@ -8,7 +8,7 @@ root = true
 end_of_line = lf
 charset = utf-8
 
-# indentation
+# indentation style and size
 indent_style = space
 indent_size = 2
 
